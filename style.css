@@ -7,7 +7,9 @@ html.body{
     height: 100%;
     width: 100%;
 }
-
+body::-webkit-scrollbar{
+    display: none;
+}
 /* ============= page 1 Starts ==================== */
 
 .page1{
@@ -64,6 +66,7 @@ nav >ul >li{
     padding: 5px 10px;
     position: relative;
     text-align: center;
+    cursor: pointer;
 }
 nav >ul >li::before{
     position: absolute;
@@ -379,14 +382,14 @@ nav >ul >li:hover::before{
     }
     .page2-right >p{
         /* background-color: rebeccapurple; */
-       margin-top: -8vh;
+        margin-top: -8vh;
         width: 100%;
-        padding-left: 0vh;
+        padding-left: 0.5vh;
         font-size: 20px;
         /* padding-top: 0px; */
         line-height: 3vh;
         margin-bottom: 3vh;
-
+        text-align: center;
     }
     .order-btn{
         /* margin-top: 5%; */
@@ -953,8 +956,8 @@ form >select >option{
     background-color: black;
     
 }
-form >select >option:{
-    background: red;
+form >select >option{
+    background: black;
 }
 #comments{
     padding: 5vh 12.5vw;
